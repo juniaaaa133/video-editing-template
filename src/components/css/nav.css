@@ -1,0 +1,154 @@
+.nv-main {
+    color: var(--text);
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items:center;
+    z-index: 5;
+}
+.nv-sc {
+    color: var(--text);
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items:center;
+    position: fixed;
+    background-color:#292929;
+    width:100%;
+    height: 60px;
+    z-index: 5;
+}
+.nv-sc-op {
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    color: var(--text);
+    position: fixed;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.nv-logo {
+    font-size: 20px;
+    color:var(--text)
+}
+.nv-port-ctn{
+    position: relative;
+}
+.nv-port-abs {
+    position: absolute;
+    width:220px;
+    left:-80px;
+    height: 200px;
+    background-color:#ffffff;
+    display: none;
+    flex-direction: column;
+    gap:20px;
+    padding: 30px;
+    color:black;
+    top: 20px;
+    height: fit-content;
+}
+.nv-port-ctn:hover .nv-port-abs {
+    display: flex;
+}
+.nv-link {
+    
+}
+.nv-link:hover {
+    color: var(--main-color)
+}
+
+.bcn {
+    cursor: pointer;
+    user-select: none;
+}
+.nv-list-ctn {
+    display: flex;
+}
+.nv-mb-icn {
+    display: none;
+}
+.nv-ad-ctn {
+    width:100%;
+    height: 100vh;
+    top:0;
+    right:0;
+    background-color: white;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items:center;
+    /* background-color: black; */
+}
+.nv-ad-ctn-hide {
+    width:100%;
+    height: 100vh;
+    top:0;
+    right:-100%;
+    background-color: white;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items:center;
+    /* background-color: black; */
+}
+.nvmbop {
+    transform: rotate(180deg);
+}
+.nvcl{
+    transform: rotate(45deg);
+    color:black;
+    position: absolute;
+    top:50px;
+    right:50px;
+    font-size: 30px;
+    z-index: 2;
+}
+.nv-mb-mega-sec {
+width: 200px;
+height: 300px;
+display: flex;
+flex-direction: column;
+gap:30px;
+align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nv-sc {
+        display: none;
+    }
+    .nv-sc-op {
+        display: none;
+    }
+    .nv-mb-icn {
+        display: block;
+    }
+    .nv-main {
+        padding: 0 40px;
+        position: sticky;
+        top:0;
+        background-color: #292929;
+    }
+    .nv-list-ctn {
+        display: none;
+    }
+    .nv-ad-ctn {display: flex;}
+}
+
+@media (max-width: 480px) {
+    .nv-main {
+        padding: 0 20px;
+      
+    }
+}

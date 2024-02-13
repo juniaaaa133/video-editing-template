@@ -1,0 +1,100 @@
+
+@import './homeabout.css';
+@import './homeservice.css';
+.hm-main {
+    width:100%;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.hm-txt-sec {
+    width:34%;
+    height: 300px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+gap:15px
+
+}
+.ht-desc {
+    font-size: 28px;
+}
+.hm-img-sec {
+    width:60%;
+    height: 400px;
+    position: relative;
+    /* background-color: red; */
+}
+.hm-img-layer {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.hmimg {
+    border-radius: 20px;
+}
+.hmlayer1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+   
+    background-color: #b72424;
+    border-radius:20px;
+}
+
+.hmlayer2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    background-color: #b72424;
+    border-radius:10px;
+}
+
+@media (max-width: 990px) {
+    .hm-txt-sec {
+        width:40%
+    }
+    .hm-img-sec {
+        width:50%;
+        height: 300px;
+        /* background-color: red; */
+    }
+}
+
+@media (max-width: 768px) {
+  
+    .hm-txt-sec {
+        width:100%
+    }
+    .hm-img-sec {
+        width:100%;
+        height: 500px;
+       
+    }
+}
+
+@media (max-width:480px) {
+    .hm-img-sec {
+        height: 400px;
+       
+    }
+    .hm-main {
+        gap:40px;
+    }
+    .hm-main {
+        padding: 0 20px;
+
+    }
+    .ht-btn {
+        width: 100%;
+    }
+}

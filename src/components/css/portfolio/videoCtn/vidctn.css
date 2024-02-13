@@ -1,0 +1,32 @@
+.vctn {
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.v-title {
+    margin: 100px 0;
+}
+@media (max-width: 768px) {
+    .vctn {
+        grid-template-columns: 48% 48%;
+
+    }
+    
+}
+
+/*Special Screen width */
+@media (max-width:648px) {
+    .vctn {
+        grid-template-columns: 100%;
+}
+}
+
+@media (max-width:480px) {
+    .vctn {
+padding: 0 20px;
+}
+}

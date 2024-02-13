@@ -1,0 +1,46 @@
+.inp {
+    width:70%;
+    height: 70px;
+    padding: 40px;
+    offset: inherit;
+    border : inherit;
+
+    border-bottom: solid 1px var(--sec-color);
+    background-color: inherit;
+}
+.inp0 {
+    width: 70%;
+    height: 280px;
+    padding:40px;
+    offset: inherit;
+    border: solid 1px var(--sec-color);
+    border-radius: 12px;
+    background-color: inherit;
+    margin-top: 20px;
+}
+.cbt {
+    width: 200px;
+}
+@media (max-width: 768px) {
+
+    .inp {
+    width:85%;
+}
+.inp0 {
+    width: 85%;
+}
+
+}
+@media (max-width: 480px) {
+
+    .inp {
+    width:90%;
+}
+.inp0 {
+    width: 90%;
+}
+.cbt {
+    width:90% ;
+}
+
+}
