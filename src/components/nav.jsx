@@ -65,7 +65,7 @@ useEffect(()=>{
         {/**Android Screen */}
         <div className={hideNav == false ? 'trans nv-ad-ctn' : 'trans nv-ad-ctn-hide'}>
           <FaPlus onClick={()=>setHideNav(true)} className='nvcl'/>
-            <Link onClick={()=>setScreen(false)} className='nv-link text-black trans' href='/'>Home</Link>
+            <Link onClick={()=>setHideNav(true)} className='nv-link text-black trans' href='/'>Home</Link>
            <div onClick={()=>openMega(!mega)} className='trans flex gap-[8px] items-center nav-link text-black nv-mb-mega'>
             <div >Portfolio</div>
             <MdOutlineKeyboardArrowUp className={mega == false ? 'trans ' :'trans nvmbop'} />
@@ -73,12 +73,12 @@ useEffect(()=>{
            <div className={mega == false ? 'hidden' : 'nv-mb-mega-sec'}>
              {
               categoryRoute.map((data,index) => (
-                <Link onClick={()=>setScreen(false)} key={index} className='nv-link text-black trans' href={data.path}>{data.name}</Link>
+                <Link onClick={()=>setHideNav(true)} key={index} className='nv-link text-black trans' href={data.path}>{data.name}</Link>
                 ))
             } 
            </div>
-            <Link onClick={()=>setScreen(false)} className='nv-link text-black trans' href='/about'>About</Link>
-            <Link onClick={()=>setScreen(false)} className='nv-link text-black trans' href='/contact'>Contact</Link>
+            <Link onClick={()=>setHideNav(true)} className='nv-link text-black trans' href='/about'>About</Link>
+            <Link onClick={()=>setHideNav(true)} className='nv-link text-black trans' href='/contact'>Contact</Link>
 
         </div>
     </div>
