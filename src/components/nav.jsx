@@ -10,11 +10,11 @@ import { FaPlus } from "react-icons/fa6";
 const Nav = () => {
 
   let categoryRoute = [
-    {path : 'portfolio/all', name : "All"},
-        {path : 'portfolio/documentry', name : "Documentry"},
-    {path : 'portfolio/animation', name : "Animation"},
-    {path : 'portfolio/fancy', name : "Fancy"},
-    {path : 'portfolio/production', name : "Editing Production"},
+    {path : '/portfolio/all', name : "All"},
+        {path : '/portfolio/documentry', name : "Documentry"},
+    {path : '/portfolio/animation', name : "Animation"},
+    {path : '/portfolio/fancy', name : "Fancy"},
+    {path : '/portfolio/production', name : "Editing Production"},
 
   ]
 
@@ -44,7 +44,7 @@ useEffect(()=>{
  <>
  
  <div className={`sec-f nv-main w-[100%] h-[80px] ${show == false ? '' : ''}`}>
-        <Link className='nv-logo sec-f' href='/' >BrandSMT</Link>
+        <Link className='nv-logo sec-f' href='/' >Williams</Link>
         <div className='nv-list-ctn gap-[30px] text-[13px] font-[500] items-center '> 
         <Link className='nv-link trans'   href='/'>Home</Link>
         <div className='nv-port-ctn '>
@@ -85,7 +85,7 @@ useEffect(()=>{
 
 
     <div className={show == false ? 'trans  top-0 nv-sc ' : ' trans top-[-200px] nv-sc'}>
-    <Link className='nv-logo sec-f' href='/' >BrandSMT</Link>
+    <Link className='nv-logo sec-f' href='/' >Williams</Link>
 
       <IoMdMenu onClick={()=>setScreen(true)} className=' text-white text-[20px] bcn'/>
     </div>

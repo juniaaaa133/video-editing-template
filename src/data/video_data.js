@@ -177,9 +177,9 @@ export const data = {
         videos : [
             {
                 id: 1,
-                link : "https://www.youtube.com/embed/5LK9tc4uD-w?si=cMU40PvCkXRRsC_-",
-                name : 'Lyric Translation',
-                type : 'Fancy',
+                link : "https://www.youtube.com/embed/aqz-KE-bpKQ?si=WLru6H4cYsHhrbEg",
+                name : 'Big Buck Bunny',
+                type : 'Animation',
             },
             
         ]

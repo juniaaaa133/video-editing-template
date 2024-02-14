@@ -5,10 +5,16 @@ import Image from 'next/image';
 import HomeAbout from './homeAbout';
 import HomeService from './homeService';
 import { data } from '@/data/video_data';
+import { motion } from "framer-motion"
 
 const HomePage = () => {
   return (
 <>
+<motion.div
+initial={{ opacity: 0,  translateY : 200 }}
+animate={{ opacity: 1, translateY : 0}}
+  transition={{ delay: 0,duration : 0.6}}
+>
 <div className='hm-main'> 
             <div className="hm-img-sec ">
     <div className="hmlayer1 top-0 left-0"></div>
@@ -34,6 +40,7 @@ const HomePage = () => {
             </button>
         </div>
     </div>
+    </motion.div>
     <div className="bar"></div>
     <HomeService />
     <div className="bar"></div>

@@ -8,11 +8,12 @@ const PortfolioPage = ({params}) => {
     
     params.slug?.length == 1 ?
     <div>
-        <VidContainer/>
+        <VidContainer data_to_filter={params.slug[0]}/>
     </div>
     :
     <div>
-        {params.slug[1]}
+        {params.slug[0]}
+        
     </div>
   )
 }

@@ -1,21 +1,30 @@
+"use client"
+
 import Link from 'next/link'
 import React from 'react'
-
+import {motion} from 'framer-motion'
 const HomeAbout = () => {
   return (
+    <motion.div
+initial={{ opacity: 0,  translateY : 200 }}
+animate={{ opacity: 1, translateY : 0}}
+  transition={{ delay: 0,duration : 0.6}}
+>
     <div className='habt-main'>
+
         <div className="habt-title">
             <div className="habt-tit main-c main-f font-[600] text-[62px] ">Who I am</div>
           
             <div className="hbbtn">
      <button className='habt-btn ad0'>
-            <Link href='/' className='b-btn trans bcn sec-c main-f'>About Me</Link>
+            <Link href='/about' className='b-btn trans bcn sec-c main-f'>About Me</Link>
           </button>
           <button className='habt-btn ad0'>
-            <Link href='/' className='w-btn trans bcn sec-c main-f'>Contact Me</Link>
+            <Link href='/contact' className='w-btn trans bcn sec-c main-f'>Contact Me</Link>
           </button>
      </div>
         </div>
+
         <div className="habt-txt main-f sec-c text-[15px]">
 {
     `
@@ -24,6 +33,7 @@ const HomeAbout = () => {
     `
 }
         </div>
+
      <div className="hbbtn">
      <button className='habt-btn ad'>
             <Link href='/' className='b-btn trans bcn sec-c main-f'>About Me</Link>
@@ -33,6 +43,7 @@ const HomeAbout = () => {
           </button>
      </div>
     </div>
+    </motion.div>
   )
 }
 
