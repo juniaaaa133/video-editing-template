@@ -59,7 +59,7 @@ left:0;
     gap:15px;
 }
 
-@media (max-width:768px) {
+@media (max-width:769px) {
     .vw-ctn {
         width: 80%;
         height:350px;

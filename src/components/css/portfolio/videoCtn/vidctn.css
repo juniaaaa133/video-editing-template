@@ -10,7 +10,7 @@
 .v-title {
     margin: 100px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .vctn {
         grid-template-columns: 48% 48%;
 
